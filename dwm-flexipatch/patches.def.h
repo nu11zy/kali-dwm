@@ -1068,7 +1068,7 @@
  * clients that will abuse it.
  * https://dwm.suckless.org/patches/sizehints/
  */
-#define SIZEHINTS_PATCH 0
+#define SIZEHINTS_PATCH 1
 
 /* This patch makes dwm obey even "soft" sizehints for new clients. This ruled
  * version is essentially the same patch except it obeys the "isfloating" rule
