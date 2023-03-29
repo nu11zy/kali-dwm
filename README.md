@@ -9,6 +9,6 @@ chmod +x install.sh
 
 1. Удаляем все горячие клавиши из keyboard -> application shortcuts
 2. Ставим Never на xfwm, xfce-panel и xfdesktop в session manager -> current session. **SAVE SESSION**
-3. Добавляем `dwm`, `slstatus`, `xwallpaper --center ~/.local/.desktop/wallpaper.png` в session manager -> application autostart.\
+3. Добавляем `dwm`, `slstatus`, `xwallpaper-dwm` в session manager -> application autostart.\
    *По желанию убираем `user folders update`*
 5. Перезагружаем
