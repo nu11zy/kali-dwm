@@ -1,6 +1,6 @@
 ```bash
-git clone https://github.com/nu11zy/test
-cd test
+git clone https://github.com/nu11zy/kali-dwm
+cd kali-dwm
 chmod +x install.sh
 ./install.sh
 ```
