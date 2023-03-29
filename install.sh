@@ -19,6 +19,7 @@ cp -r ./slstatus ~/.local/.desktop/slstatus
 # install wallpaper
 sudo apt install -y xwallpaper
 cp wallpaper.png ~/.local/.desktop/
+sudo cp xwallpaper-dwm /usr/local/bin/ && sudo chmod +x /usr/local/bin/xwallpaper-dwm
 
 # install st
 git clone git://git.suckless.org/st ~/.local/.desktop/st
