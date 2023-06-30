@@ -1,0 +1,6 @@
+---
+- name: "Custom Kali"
+  hosts: localhost
+  connection: local
+  roles:
+    - role: "roles/i3wm"

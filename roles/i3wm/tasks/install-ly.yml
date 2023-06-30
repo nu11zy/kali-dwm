@@ -1,0 +1,14 @@
+---
+- name: "Install ly"
+  git:
+    repo: "https://github.com/fairyglade/ly"
+    dest: "/tmp/ly"
+
+- name: "Building ly"
+  shell: |
+    cd /tmp/ly
+    make
+    make install installsystemd
+    systemctl enable ly.service
+  become: true
+  become_method: sudo
