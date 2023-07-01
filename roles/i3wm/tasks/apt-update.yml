@@ -4,7 +4,7 @@
   become: true
   become_method: sudo
 
-- name: "Installing stuff"
+- name: "Installing i3 and qterminal"
   package:
     name:
       - git
@@ -13,6 +13,18 @@
       - libxcb-xkb-dev
       - i3-wm
       - xorg
+      # Fonts
+      - fontconfig
+      - unifont
+      - fonts-noto-color-emoji
+      - fonts-droid-fallback
+      - fonts-firacode
+      # Terminal
+      - qterminal
+      # GUI
+      - lxappearance
+      - kali-themes
+      - qt5ct
     state: latest
   become: true
   become_method: sudo
