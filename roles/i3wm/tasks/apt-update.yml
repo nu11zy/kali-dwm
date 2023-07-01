@@ -13,6 +13,7 @@
       - libxcb-xkb-dev
       - i3-wm
       - xorg
+      - virtualbox-guest-x11
       # Fonts
       - fontconfig
       - unifont
