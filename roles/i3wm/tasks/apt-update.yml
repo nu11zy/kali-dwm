@@ -8,6 +8,8 @@
   package:
     name:
       - git
+      - curl
+      - unzip
       - build-essential
       - xorg
       - virtualbox-guest-x11
