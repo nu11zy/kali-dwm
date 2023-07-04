@@ -1,0 +1,8 @@
+---
+- name: "dwm"
+  package:
+    name:
+      - i3-wm
+    state: latest
+  become: true
+  become_method: sudo

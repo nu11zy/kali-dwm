@@ -1,10 +1,19 @@
 ---
-- name: "Install ly"
+- name: "Install ly requirements"
+  package:
+    name:
+      - libpam0g-dev
+      - libxcb-xkb-dev
+    state: latest
+  become: true
+  become_method: sudo
+
+- name: "Download ly"
   git:
     repo: "https://github.com/fairyglade/ly"
     dest: "/tmp/ly"
 
-- name: "Building ly"
+- name: "Build ly"
   shell: |
     cd /tmp/ly
     make

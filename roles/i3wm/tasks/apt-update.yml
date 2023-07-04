@@ -4,28 +4,20 @@
   become: true
   become_method: sudo
 
-- name: "Installing i3 and qterminal"
+- name: "Basic tools"
   package:
     name:
       - git
       - build-essential
-      - libpam0g-dev
-      - libxcb-xkb-dev
-      - i3-wm
       - xorg
       - virtualbox-guest-x11
-      # Fonts
-      - fontconfig
-      - unifont
-      - fonts-noto-color-emoji
-      - fonts-droid-fallback
-      - fonts-firacode
-      # Terminal
-      - qterminal
+      # FiraCode Nerd Font
+      #- fonts-noto-color-emoji
+      #- unifont
       # GUI
-      - lxappearance
-      - kali-themes
-      - qt5ct
+      #- lxappearance
+      #- kali-themes
+      #- qt5ct
     state: latest
   become: true
   become_method: sudo
