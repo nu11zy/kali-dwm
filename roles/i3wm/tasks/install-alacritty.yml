@@ -32,5 +32,4 @@
   shell: |
     cd /tmp/alacritty
     cargo build --release
-  become: true
-  become_method: sudo
+    
