@@ -8,3 +8,29 @@
 
 - name: install rust/cargo
   shell: /tmp/sh.rustup.rs -y
+
+- name: install alacritty dependencies
+  package:
+    name:
+      - cmake
+      - pkg-config
+      - libfreetype6-dev
+      - libfontconfig1-dev
+      - libxcb-xfixes0-dev
+      - libxkbcommon-dev
+      - python3
+    state: latest
+  become: true
+  become_method: sudo
+
+- name: "Download alacritty"
+  git:
+    repo: "https://github.com/alacritty/alacritty"
+    dest: "/tmp/alacritty"
+
+- name: "Build alacritty"
+  shell: |
+    cd /tmp/alacritty
+    cargo build --release
+  become: true
+  become_method: sudo
