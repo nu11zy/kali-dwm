@@ -32,4 +32,10 @@
   shell: |
     cd /tmp/alacritty
     cargo build --release
-    
+
+- name: "Copy binary to /usr/local/bin"
+  copy:
+    src: /tmp/alacritty/target/release/alacritty
+    dest: /usr/local/bin/alacritty
+  become: true
+  become_method: sudo
