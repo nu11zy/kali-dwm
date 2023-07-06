@@ -14,3 +14,7 @@
     state: latest
   become: true
   become_method: sudo
+
+- name: "Cache fonts"
+  shell: |
+    fc-cache -fv
