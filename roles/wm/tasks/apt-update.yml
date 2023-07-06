@@ -13,9 +13,6 @@
       - build-essential
       - xorg
       - virtualbox-guest-x11
-      # FiraCode Nerd Font
-      #- fonts-noto-color-emoji
-      #- unifont
       # GUI
       #- lxappearance
       #- kali-themes

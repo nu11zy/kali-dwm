@@ -5,3 +5,12 @@
     dest: "/usr/share/fonts/truetype/"
   become: true
   become_method: sudo
+
+- name: "dwm"
+  package:
+    name:
+      - fonts-noto-color-emoji
+      - unifont
+    state: latest
+  become: true
+  become_method: sudo
