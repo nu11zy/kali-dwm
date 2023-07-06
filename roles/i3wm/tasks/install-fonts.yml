@@ -1,0 +1,5 @@
+---
+- name: "Install FiraCode Nerd font"
+  copy:
+    src: "{{ playbook_dir }}/files/FiraCode"
+    dest: "/usr/share/fonts/truetype/"
