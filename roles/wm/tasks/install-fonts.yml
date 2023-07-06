@@ -1,7 +1,7 @@
 ---
-- name: "Install FiraCode Nerd font"
+- name: "Install JetBrainsMono Nerd font"
   copy:
-    src: "{{ playbook_dir }}/roles/wm/files/FiraCode"
+    src: "{{ playbook_dir }}/roles/wm/files/JetBrainsMono"
     dest: "/usr/share/fonts/truetype/"
   become: true
   become_method: sudo
