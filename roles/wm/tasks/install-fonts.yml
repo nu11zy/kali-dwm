@@ -6,7 +6,7 @@
   become: true
   become_method: sudo
 
-- name: "dwm"
+- name: "Install unifont and noto-emoji"
   package:
     name:
       - fonts-noto-color-emoji
