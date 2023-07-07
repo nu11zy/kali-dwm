@@ -8,8 +8,12 @@
   file: 
     path: "/root/.conf"
     state: directory
+  become: true
+  become_method: sudo
 
 - name: "Configure alacritty for root"
   copy:
     src: "{{ playbook_dir }}/roles/alacritty-config/files/alacritty"
     dest: "/root/.config/"
+  become: true
+  become_method: sudo
