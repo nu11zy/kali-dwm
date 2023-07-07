@@ -1,8 +1,10 @@
 ---
-- name: "dwm"
+- name: "dwm requirements"
   package:
     name:
-      - i3-wm
+      - libx11-dev
+      - libxft-dev
+      - libxinerama-dev
     state: latest
   become: true
   become_method: sudo
