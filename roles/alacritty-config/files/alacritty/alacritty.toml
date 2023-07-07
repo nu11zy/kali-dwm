@@ -57,18 +57,18 @@ style = "Regular"
 command = "xdg-open"
 hyperlinks = true
 post_processing = true
-regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-Â<>\"\\s{-}\\^â¨â©`]+"
 
 [hints.enabled.binding]
 key = "U"
-mods = "Control|Shift"
+mods = "Control"
 
 [hints.enabled.mouse]
 enabled = true
 mods = "Control"
 
 [window]
-opacity = 8.5
+opacity = 0.85
 
 [window.padding]
 x = 5
