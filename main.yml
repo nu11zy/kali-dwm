@@ -4,3 +4,4 @@
   connection: local
   roles:
     - role: "roles/wm"
+    - role: "roles/alacritty-config"
