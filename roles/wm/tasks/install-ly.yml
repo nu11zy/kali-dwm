@@ -11,11 +11,13 @@
 - name: "Download ly"
   git:
     repo: "https://github.com/fairyglade/ly"
-    dest: "/tmp/ly"
+    dest: "/usr/local/src/ly"
+  become: true
+  become_method: sudo
 
 - name: "Build ly"
   shell: |
-    cd /tmp/ly
+    cd /usr/local/src/ly
     make
     make install installsystemd
     systemctl enable ly.service

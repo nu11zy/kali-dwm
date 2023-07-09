@@ -10,8 +10,12 @@
       - git
       - curl
       - unzip
+      - fontconfig
       - build-essential
       - xorg
+      - picom
+      - xwallpaper
+      - nsxiv
       - virtualbox-guest-x11
       # GUI
       #- lxappearance
