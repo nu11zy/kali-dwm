@@ -1,7 +1,7 @@
 ---
 - name: "Configure alacritty for user"
   copy:
-    src: "{{ playbook_dir }}/roles/alacritty-config/files/alacritty"
+    src: "{{ playbook_dir }}/roles/wm-config/files/alacritty"
     dest: "{{ ansible_env.HOME }}/.config/"
 
 - name: "ensures /root/.conf dir exists"
@@ -13,7 +13,7 @@
 
 - name: "Configure alacritty for root"
   copy:
-    src: "{{ playbook_dir }}/roles/alacritty-config/files/alacritty"
+    src: "{{ playbook_dir }}/roles/wm-config/files/alacritty"
     dest: "/root/.config/"
   become: true
   become_method: sudo
