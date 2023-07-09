@@ -1,15 +1,15 @@
 ---
-- name: Download rust installer
+- name: "Download rust installer"
   get_url:
     url: https://sh.rustup.rs
     dest: /tmp/sh.rustup.rs
     mode: '0755'
     force: 'yes'
 
-- name: install rust/cargo
+- name: "install rust/cargo"
   shell: /tmp/sh.rustup.rs -y
 
-- name: install alacritty dependencies
+- name: "install alacritty dependencies"
   package:
     name:
       - cmake

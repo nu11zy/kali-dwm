@@ -11,3 +11,30 @@
   become: true
   become_method: sudo
 
+- name: "Download dwm"
+  git:
+    repo: "https://github.com/nu11zy/kali-dwm-patched"
+    dest: "/usr/local/src/dwm"
+  become: true
+  become_method: sudo
+
+- name: "Build dwm"
+  shell: |
+    cd /usr/local/src/dwm
+    make clean install
+  become: true
+  become_method: sudo
+
+- name: "ensures /usr/share/xsessions dir exists"
+  file: 
+    path: "/usr/share/xsessions"
+    state: directory
+  become: true
+  become_method: sudo
+
+- name: "Copy dwm.desktop"
+  copy:
+    src: "/usr/local/src/dwm/dwm.desktop"
+    dest: "/usr/share/xsessions/"
+  become: true
+  become_method: sudo

@@ -4,7 +4,7 @@
     src: "{{ playbook_dir }}/roles/alacritty-config/files/alacritty"
     dest: "{{ ansible_env.HOME }}/.config/"
 
-- name: ensures /root/.conf dir exists
+- name: "ensures /root/.conf dir exists"
   file: 
     path: "/root/.conf"
     state: directory
