@@ -1,0 +1,12 @@
+---
+- name: "Create directories"
+  file:
+    path: "{{ ansible_env.HOME }}/.local/share/dwm"
+    state: directory
+  with_filetree: "{{ ansible_env.HOME }}"
+
+- name: "Create ~/.local/share/dwm/autostart.sh"
+  copy:
+    src: "{{ playbook_dir }}/roles/alacritty-config/files/alacritty"
+    dest: "{{ ansible_env.HOME }}/.local/share/dwm/autostart.sh"
+

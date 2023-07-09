@@ -1,2 +1,3 @@
 ---
 - include: alacritty-config.yml
+- include: dwm-config.yml
