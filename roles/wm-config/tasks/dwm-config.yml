@@ -7,6 +7,6 @@
 
 - name: "Create ~/.local/share/dwm/autostart.sh"
   copy:
-    src: "{{ playbook_dir }}/roles/alacritty-config/files/alacritty"
+    src: "{{ playbook_dir }}/roles/wm-config/files/alacritty"
     dest: "{{ ansible_env.HOME }}/.local/share/dwm/autostart.sh"
 
