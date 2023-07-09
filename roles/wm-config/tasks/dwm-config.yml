@@ -1,9 +1,9 @@
 ---
-- name: "Create directories"
-  file:
+- name: "ensures {{ ansible_env.HOME }}/.local/share/dwm dir exists"
+  file: 
     path: "{{ ansible_env.HOME }}/.local/share/dwm"
+    recurse: true
     state: directory
-  with_filetree: "{{ ansible_env.HOME }}"
 
 - name: "Create ~/.local/share/dwm/autostart.sh"
   copy:
