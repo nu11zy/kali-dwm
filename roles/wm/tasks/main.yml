@@ -1,6 +1,6 @@
 ---
-#- include: apt-update.yml
+- include: apt-update.yml
 - include: install-dwm.yml
-# - include: install-ly.yml
-# - include: install-alacritty.yml
-# - include: install-fonts.yml
+- include: install-ly.yml
+- include: install-alacritty.yml
+- include: install-fonts.yml
