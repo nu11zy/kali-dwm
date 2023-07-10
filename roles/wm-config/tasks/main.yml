@@ -1,4 +1,3 @@
 ---
 - include: alacritty-config.yml
 - include: dwm-config.yml
-- include: picom-config.yml

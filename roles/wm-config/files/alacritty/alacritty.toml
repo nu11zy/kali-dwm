@@ -67,9 +67,6 @@ mods = "Control"
 enabled = true
 mods = "Control"
 
-[window]
-opacity = 0.85
-
 [window.padding]
 x = 5
 y = 5
