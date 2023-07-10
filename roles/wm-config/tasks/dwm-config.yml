@@ -5,8 +5,12 @@
     recurse: true
     state: directory
 
+- name: "Copy wallpapers"
+  copy:
+    src: "{{ playbook_dir }}/roles/wm-config/files/wallpaper.png"
+    dest: "/usr/local/share/"
+
 - name: "Create ~/.local/share/dwm/autostart.sh"
   copy:
-    src: "{{ playbook_dir }}/roles/wm-config/files/alacritty"
-    dest: "{{ ansible_env.HOME }}/.local/share/dwm/autostart.sh"
-
+    src: "{{ playbook_dir }}/roles/wm-config/files/autostart.sh"
+    dest: "{{ ansible_env.HOME }}/.local/share/dwm/"
