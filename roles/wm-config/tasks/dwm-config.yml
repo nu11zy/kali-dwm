@@ -12,7 +12,8 @@
   become: true
   become_method: sudo
   
-- name: "Create ~/.local/share/dwm/autostart.sh"
+- name: "Create {{ ansible_env.HOME }}/.local/share/dwm/autostart.sh"
   copy:
     src: "{{ playbook_dir }}/roles/wm-config/files/autostart.sh"
     dest: "{{ ansible_env.HOME }}/.local/share/dwm/"
+    mode: 755

@@ -4,9 +4,9 @@
     src: "{{ playbook_dir }}/roles/wm-config/files/alacritty"
     dest: "{{ ansible_env.HOME }}/.config/"
 
-- name: "ensures /root/.conf dir exists"
+- name: "ensures /root/.config dir exists"
   file: 
-    path: "/root/.conf"
+    path: "/root/.config"
     state: directory
   become: true
   become_method: sudo
