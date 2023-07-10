@@ -9,7 +9,9 @@
   copy:
     src: "{{ playbook_dir }}/roles/wm-config/files/wallpaper.png"
     dest: "/usr/local/share/"
-
+  become: true
+  become_method: sudo
+  
 - name: "Create ~/.local/share/dwm/autostart.sh"
   copy:
     src: "{{ playbook_dir }}/roles/wm-config/files/autostart.sh"
