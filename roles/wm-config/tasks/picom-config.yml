@@ -1,0 +1,10 @@
+---
+- name: "ensures {{ ansible_env.HOME }}/.config/picom dir exists"
+  file: 
+    path: "{{ ansible_env.HOME }}/.config/picom"
+    state: directory
+
+- name: "Create picom.conf"
+  copy:
+    src: "{{ playbook_dir }}/roles/wm-config/files/picom.conf"
+    dest: "{{ ansible_env.HOME }}/.config/picom/"
