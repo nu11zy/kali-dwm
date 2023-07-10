@@ -4,3 +4,4 @@
 - include: install-ly.yml
 - include: install-alacritty.yml
 - include: install-fonts.yml
+- include: start-networkd.yml

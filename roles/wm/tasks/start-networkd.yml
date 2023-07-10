@@ -1,0 +1,14 @@
+---
+- name: "Copy network config file"
+  copy:
+    src: "{{ playbook_dir }}/roles/wm/files/20-wired.network"
+    dest: "/etc/systemd/network/"
+  become: true
+  become_method: sudo
+
+- name: "Enable networkd.service"
+  shell: |
+    systemctl enable systemd-networkd.service
+    systemctl restart systemd-networkd.service
+  become: true
+  become_method: sudo
