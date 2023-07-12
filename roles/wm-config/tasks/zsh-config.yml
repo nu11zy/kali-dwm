@@ -1,0 +1,6 @@
+---
+- name: "ensures {{ ansible_env.HOME }}/.config/zsh dir exists"
+  file: 
+    path: "{{ ansible_env.HOME }}/.config/zsh"
+    state: directory
+
