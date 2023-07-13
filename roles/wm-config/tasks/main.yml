@@ -2,3 +2,4 @@
 - include: alacritty-config.yml
 - include: dwm-config.yml
 - include: zsh-config.yml
+- include: nvim-config.yml

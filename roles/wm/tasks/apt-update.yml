@@ -17,6 +17,7 @@
       - nsxiv  # image viewer
       - hexyl  # hex viewer
       - batcat # cat but with colors
+      - neovim # NeoVIM
       - fzf    # fuzzy finder
       - virtualbox-guest-x11
       # GUI

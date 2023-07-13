@@ -1,0 +1,11 @@
+---
+- name: "ensures {{ ansible_env.HOME }}/.config/nvim dir exists"
+  file: 
+    path: "{{ ansible_env.HOME }}/.config/nvim"
+    state: directory
+  
+- name: "Create {{ ansible_env.HOME }}/.config/nvim/init.vim"
+  copy:
+    src: "{{ playbook_dir }}/roles/wm-config/files/init.vim"
+    dest: "{{ ansible_env.HOME }}/.config/nvim/"
+    mode: 0644
