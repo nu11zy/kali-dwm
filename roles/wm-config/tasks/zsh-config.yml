@@ -1,6 +1,21 @@
 ---
-- name: "ensures {{ ansible_env.HOME }}/.config/zsh dir exists"
+- name: "ensures {{ ansible_env.HOME }}/.cache/zsh dir exists"
   file: 
-    path: "{{ ansible_env.HOME }}/.config/zsh"
+    path: "{{ ansible_env.HOME }}/.cache/zsh"
     state: directory
 
+- name: "remove {{ ansible_env.HOME }}/.zshrc"
+  file: 
+    path: "{{ ansible_env.HOME }}/.zshrc"
+    state: absent
+
+- name: "remove {{ ansible_env.HOME }}/.zsh_history"
+  file: 
+    path: "{{ ansible_env.HOME }}/.zsh_history"
+    state: absent
+
+- name: "Create {{ ansible_env.HOME }}/.zshrc"
+  copy:
+    src: "{{ playbook_dir }}/roles/wm-config/files/.zshrc"
+    dest: "{{ ansible_env.HOME }}/"
+    mode: 0644
