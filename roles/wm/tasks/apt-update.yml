@@ -13,7 +13,11 @@
       - fontconfig
       - build-essential
       - xorg
-      - nsxiv
+      - dmenu
+      - nsxiv  # image viewer
+      - hexyl  # hex viewer
+      - batcat # cat but with colors
+      - fzf    # fuzzy finder
       - virtualbox-guest-x11
       # GUI
       #- lxappearance
