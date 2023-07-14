@@ -20,10 +20,6 @@
       - neovim # NeoVIM
       - fzf    # fuzzy finder
       - virtualbox-guest-x11
-      # GUI
-      #- lxappearance
-      #- kali-themes
-      #- qt5ct
     state: latest
   become: true
   become_method: sudo
