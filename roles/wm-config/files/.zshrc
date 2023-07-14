@@ -44,7 +44,7 @@ setopt HIST_VERIFY
 # https://thevaluable.dev/zsh-install-configure-mouseless/
 autoload -Uz compinit
 compinit -d ~/.cache/zcompdump
-_comp_options+=(globdots)
+#_comp_options+=(globdots)
 zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete
