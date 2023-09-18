@@ -15,6 +15,7 @@
   git:
     repo: "https://github.com/nu11zy/kali-dwm-patched"
     dest: "/usr/local/src/dwm"
+    version: macOS
   become: true
   become_method: sudo
 
